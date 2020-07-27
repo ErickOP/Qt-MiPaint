@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Recursos/Circunferencias.png</file>
+        <file>Recursos/Color.png</file>
+        <file>Recursos/Grosor.png</file>
+        <file>Recursos/Guardar.png</file>
+        <file>Recursos/Informacion.png</file>
+        <file>Recursos/Lapiz.png</file>
+        <file>Recursos/Linea.png</file>
+        <file>Recursos/Nuevo.png</file>
+        <file>Recursos/Paint.png</file>
+        <file>Recursos/Rectangulos.png</file>
+        <file>Recursos/Salir.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Principal</class>
+ <widget class="QMainWindow" name="Principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Vrinda</family>
+    <pointsize>11</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>CrossCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>Paint</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Iconos.qrc">
+    <normaloff>:/Recursos/Paint.png</normaloff>:/Recursos/Paint.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0, 0, 0);</string>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionGuardar"/>
+    <addaction name="separator"/>
+    <addaction name="actionNuevo"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuEstilo">
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Estilo</string>
+    </property>
+    <addaction name="actionColor"/>
+    <addaction name="actionAncho"/>
+   </widget>
+   <widget class="QMenu" name="menuForma">
+    <property name="font">
+     <font>
+      <family>Vrinda</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Forma</string>
+    </property>
+    <addaction name="actionLineas"/>
+    <addaction name="actionLibre"/>
+    <addaction name="actionRectanculos"/>
+    <addaction name="actionCircunferencias"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="actionAcerca_de"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuEstilo"/>
+   <addaction name="menuForma"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Nuevo.png</normaloff>:/Recursos/Nuevo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nuevo</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Guardar.png</normaloff>:/Recursos/Guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Salir.png</normaloff>:/Recursos/Salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Color.png</normaloff>:/Recursos/Color.png</iconset>
+   </property>
+   <property name="text">
+    <string>Color</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionAncho">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Grosor.png</normaloff>:/Recursos/Grosor.png</iconset>
+   </property>
+   <property name="text">
+    <string>Grosor</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionLineas">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Linea.png</normaloff>:/Recursos/Linea.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lineas</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionLibre">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Lapiz.png</normaloff>:/Recursos/Lapiz.png</iconset>
+   </property>
+   <property name="text">
+    <string>Lápiz</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="actionRectanculos">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Rectangulos.png</normaloff>:/Recursos/Rectangulos.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rectánculos</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionCircunferencias">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Circunferencias.png</normaloff>:/Recursos/Circunferencias.png</iconset>
+   </property>
+   <property name="text">
+    <string>Circunferencias</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Vrinda</family>
+     <pointsize>10</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+C</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="Iconos.qrc">
+     <normaloff>:/Recursos/Informacion.png</normaloff>:/Recursos/Informacion.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Iconos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
